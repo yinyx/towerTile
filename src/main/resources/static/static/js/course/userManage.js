@@ -2,6 +2,7 @@
 var schoolUserTable = null;
 var userMap = {};
 var userId = 0;
+var selFlag = 1;
 function cancelModifyWavePassword()
 {
 	$("#password_wave").val("");
@@ -375,6 +376,25 @@ function showTime(){
 		    //showSuccessOrErrorModal("请求出错了211","error"); 
 		}
 	});		
+}
+
+function SelAllLine(){
+    $("input[type='checkbox']").each(function(){
+        if(0==selFlag){
+            $(this).prop("checked",true)
+        }
+        else if (1==selFlag){
+            $(this).prop("checked",false)
+        }
+    });
+    if (0==selFlag)
+    {
+        selFlag = 1;
+    }
+    else if (1==selFlag)
+    {
+        selFlag = 0;
+    }
 }
 
 $(document).ready(function(){
