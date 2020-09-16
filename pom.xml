@@ -19,7 +19,7 @@
 		<java.version>1.8</java.version>
 		<kettle.version>7.1.0.0-12</kettle.version>
 	</properties>
-	
+
 	<repositories>
         <!--kettle 仓库 -->
         <repository>
@@ -27,7 +27,7 @@
         <url>http://nexus.pentaho.org/content/groups/omni</url>
         </repository>
     </repositories>
-	
+
 	<dependencies>
 	   <dependency>
          <groupId>org.springframework.boot</groupId>
@@ -72,11 +72,11 @@
             <artifactId>spring-boot-configuration-processor</artifactId>
             <optional>true</optional>
         </dependency>
-        <dependency> 
-            <groupId>commons-codec</groupId> 
-            <artifactId>commons-codec</artifactId> 
-            <version>1.6</version> 
-        </dependency> 
+        <dependency>
+            <groupId>commons-codec</groupId>
+            <artifactId>commons-codec</artifactId>
+            <version>1.6</version>
+        </dependency>
             <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-integration</artifactId>
@@ -102,24 +102,24 @@
         <dependency>
             <groupId>commons-beanutils</groupId>
             <artifactId>commons-beanutils</artifactId>
-            <version>1.8.3</version>
+            <version>1.9.4</version>
         </dependency>
         <dependency>
             <groupId>commons-collections</groupId>
             <artifactId>commons-collections</artifactId>
             <version>3.2</version>
-        </dependency>  
+        </dependency>
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-thymeleaf</artifactId>
-        </dependency>   
+        </dependency>
         <dependency>
             <groupId>com.oracle</groupId>
             <artifactId>ojdbc6</artifactId>
             <version>12.1.0.2.0</version>
-        </dependency>  
-        
-        
+        </dependency>
+
+
         <!-- kettle ETL 相关 start -->
         <dependency>
             <groupId>pentaho-kettle</groupId>
@@ -157,19 +157,19 @@
             <classifier>lgpl</classifier>
         </dependency>
         <!-- kettle ETL 相关 end -->
-    
+
         <dependency>
             <groupId>com.google.guava</groupId>
             <artifactId>guava</artifactId>
             <version>18.0</version>
         </dependency>
-        
+
         <dependency>
     <groupId>org.apache.commons</groupId>
     <artifactId>commons-vfs2</artifactId>
     <version>2.1</version>
 </dependency>
-         
+
 	</dependencies>
 
 	<build>
